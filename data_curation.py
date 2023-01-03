@@ -25,5 +25,5 @@ class Normalization():
         max_value : float
             Maximum value of the data. Default value is 1   
         """
-        norm_data=(values-min(values)) /(max(values)-min(values))
+        norm_data=(max_value-min_value)*(values-min(values)) /(max(values)-min(values))+min_value
         return norm_data

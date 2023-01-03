@@ -38,7 +38,7 @@ print(type(norm_data))
 
 data_normalized=vertical_test.copy()
 for column in vertical_test.columns:
-    data_normalized[column]=normalization.normalize(vertical_test[column])
+    data_normalized[column]=normalization.normalize(vertical_test[column],5,10)
 
 # %%
 data_normalized.describe()
